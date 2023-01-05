@@ -8,8 +8,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'NHN COMMERCE Shopby Skin',
   tagline: 'Shopby New Skin',
-  url: '/guide-site-example/',
-  baseUrl: '/',
+  url: 'https://jungeun-cho.github.io',
+  baseUrl: '/guide-site-example/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
