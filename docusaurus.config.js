@@ -37,7 +37,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/jungeun-cho/guide-site-example/tree/main/docs',
+            'https://github.dev/jungeun-cho/guide-site-example/blob/main/',
         },
         // blog: {
         //   showReadingTime: true,
@@ -57,10 +57,10 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'My Site',
+        title: '',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'NHN COMMERCE SKIN',
+          src: 'https://shopby.works/70fc6237c87ecb99f26d.png',
         },
         items: [
           {
@@ -69,12 +69,12 @@ const config = {
             position: 'left',
             label: '스킨 개발 가이드',
           },
-          { to: '/blog', label: 'Blog', position: 'left' },
-          {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
-            position: 'right',
-          },
+          // { to: '/blog', label: 'Blog', position: 'left' },
+          // {
+          //   href: 'https://github.com/facebook/docusaurus',
+          //   label: 'GitHub',
+          //   position: 'right',
+          // },
         ],
       },
       footer: {
