@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'NHN COMMERCE Shopby Skin',
   tagline: 'Shopby New Skin',
-  url: 'https://your-docusaurus-test-site.com',
+  url: '/guide-site-example/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
