@@ -29,3 +29,26 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+ul,
+ol,
+dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+em {
+  font-style: normal;
+}
+
+.api-info-toggle__btn {
+  display: inline-block;
+  padding: 9px 19px;
+  background: linear-gradient(90deg, #121212 0%, #874ecc 100%);
+  box-shadow: 2px 2px 6px #00000040;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+}

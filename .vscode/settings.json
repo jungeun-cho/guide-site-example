@@ -1,0 +1,21 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib",
+
+  // ESLint
+  "eslint.validate": ["html", "javascript", "javascriptreact"],
+  "eslint.alwaysShowStatus": true,
+
+  // Prettier
+  "editor.formatOnSave": false,
+  "files.autoSave": "onFocusChange", // optional but recommended
+  "editor.codeActionsOnSave": {
+    "source.formatDocument": true,
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "stylelint.enable": true,
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false
+}

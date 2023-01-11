@@ -9,7 +9,9 @@ const config = {
   title: 'NHN COMMERCE Shopby Skin',
   tagline: 'Shopby New Skin',
   url: 'https://jungeun-cho.github.io',
-  baseUrl: '/guide-site-example/',
+  // baseUrl: '/guide-site-example/',
+  baseUrl: '/',
+  trailingSlash: true,
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
@@ -36,8 +38,7 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.dev/jungeun-cho/guide-site-example/blob/main/',
+          editUrl: 'https://github.dev/jungeun-cho/guide-site-example/blob/main/',
         },
         // blog: {
         //   showReadingTime: true,
@@ -56,6 +57,9 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      colorMode: {
+        disableSwitch: true,
+      },
       navbar: {
         title: '',
         logo: {
@@ -68,6 +72,11 @@ const config = {
             docId: 'intro',
             position: 'left',
             label: '스킨 개발 가이드',
+          },
+          {
+            to: '/test',
+            label: 'Docs',
+            position: 'left',
           },
           // { to: '/blog', label: 'Blog', position: 'left' },
           // {

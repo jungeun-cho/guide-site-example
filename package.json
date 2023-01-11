@@ -26,7 +26,14 @@
   "devDependencies": {
     "@docusaurus/module-type-aliases": "2.2.0",
     "@tsconfig/docusaurus": "^1.0.5",
-    "typescript": "^4.7.4"
+    "@types/swagger-ui": "^3.52.0",
+    "react-data-grid": "^7.0.0-beta.20",
+    "swagger-ui": "^4.15.5",
+    "swagger-ui-react": "^4.15.5",
+    "swizzle": "^1.1.0",
+    "typescript": "^4.7.4",
+    "unified": "^10.1.2",
+    "yaml": "^2.2.1"
   },
   "browserslist": {
     "production": [
