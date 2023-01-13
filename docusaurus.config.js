@@ -78,12 +78,12 @@ const config = {
             label: 'Docs',
             position: 'left',
           },
-          // { to: '/blog', label: 'Blog', position: 'left' },
-          // {
-          //   href: 'https://github.com/facebook/docusaurus',
-          //   label: 'GitHub',
-          //   position: 'right',
-          // },
+          { to: '/blog', label: 'Blog', position: 'left' },
+          {
+            href: 'https://github.com/facebook/docusaurus',
+            label: 'GitHub',
+            position: 'right',
+          },
         ],
       },
       footer: {

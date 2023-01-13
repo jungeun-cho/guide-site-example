@@ -1,0 +1,13 @@
+diff --git a/node_modules/react-data-grid/lib/bundle.js b/node_modules/react-data-grid/lib/bundle.js
+index 37d8ee6..8221b99 100644
+--- a/node_modules/react-data-grid/lib/bundle.js
++++ b/node_modules/react-data-grid/lib/bundle.js
+@@ -1,7 +1,7 @@
+ import { useEffect, useLayoutEffect as useLayoutEffect$1, useRef, createContext, useContext, useMemo, useState, useCallback, memo, forwardRef, useImperativeHandle } from 'react';
+ import { flushSync } from 'react-dom';
+ import clsx from 'clsx';
+-import { jsxs, jsx, Fragment } from 'react/jsx-runtime';
++import { jsxs, jsx, Fragment } from 'react/jsx-runtime.js';
+ 
+ const cell = "c1wupbe7-0-0-beta-20";
+ const cellClassname = `rdg-cell ${cell}`;

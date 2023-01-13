@@ -19,3 +19,5 @@ const SwaggerView = ({ link, outlink }) => {
     </div>
   );
 };
+
+export default SwaggerView;

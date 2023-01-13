@@ -1,7 +1,6 @@
-import React, { useMemo } from 'react';
-import { createContext,useState } from 'react';
-import SwaggerView from './SwaggerView';
+import React, { useMemo, createContext,useState } from 'react';
 import './docs-with-swagger.css';
+
 import Swagger, { Domain, Method } from './Swagger';
 
 type MarkdownViewProps = {
@@ -29,19 +28,11 @@ export type DocInfo = {
 export default function DocsWithSwagger({ children }) {
   const [opened, setSwaggerViewOpened] = useState(false);
   const [docInfo, setDocInfo] = useState<DocInfo>(null);
-  const [ymlUrl, setYmlUrl] = useState<string>(null);
-  const [outlinkUrl, setOutlinkUrl] = useState<string>(null);
 
   const actions = useMemo(
     () => ({
-      toggleSwaggerView(isOpened: boolean, docInfo: DocInfo, ymlUrl: string, outlinkUrl: string) {
+      toggleSwaggerView(isOpened: boolean, docInfo: DocInfo) {
         setSwaggerViewOpened(isOpened);
-
-        // if (isOpened) {
-        //   setYmlUrl(ymlUrl);
-        //   setOutlinkUrl(outlinkUrl);
-        // } 
-
         setDocInfo(isOpened ? docInfo : null);
       }
     }),
@@ -54,7 +45,6 @@ export default function DocsWithSwagger({ children }) {
         <article className="guide">
           <section className="guide__con">{children}</section>
           <section className="guide__swagger">
-            {/* {opened ? <SwaggerView link={ymlUrl} outlink={outlinkUrl}/> : <SwaggerDefaultView/> } */}
             {opened && docInfo ? <Swagger domain={docInfo.domain} path={docInfo.path} method={docInfo.method}/> : <SwaggerDefaultView/> }
           </section>
         </article>
