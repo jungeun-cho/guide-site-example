@@ -73,11 +73,11 @@ const config = {
             position: 'left',
             label: '스킨 개발 가이드',
           },
-          {
-            to: '/test',
-            label: 'Docs',
-            position: 'left',
-          },
+          // {
+          //   to: '/test',
+          //   label: 'Docs',
+          //   position: 'left',
+          // },
           { to: '/blog', label: 'Blog', position: 'left' },
           {
             href: 'https://github.com/facebook/docusaurus',
