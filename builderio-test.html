@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+
+     
+
+<!-- <builder-component model="page" api-key="4b379adc471942778fda957ff454cd32" entry="9e0b70872781480983620c24445f3a3d" name="page">
+  Loading...
+</builder-component>
+<script async src="https://cdn.builder.io/js/webcomponents"></script> -->
+
+<!-- The script only needs to be included once per page -->
+<script async src="https://cdn.builder.io/js/webcomponents"></script>
+<!--
+<builder-component
+  name="page"
+  entry="9e0b70872781480983620c24445f3a3d"
+  api-key="4b379adc471942778fda957ff454cd32">
+  <div style="display: flex; flex-direction: column; align-items: stretch">
+    <img
+      style="margin: 10px auto; width: 30px; height: 30px"
+      src="https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F0ea05b817e7040c39ec81987611542d7" />
+  </div>
+</builder-component>
+-->
+
+        <script>
+
+        async function getHTML() {
+          // const encodedUrl = encodeURIComponent(req.url);
+          const apiKey = '4b379adc471942778fda957ff454cd32';
+          const encodedUrl = encodeURIComponent('/test-page');
+          const url = 'https://cdn.builder.io/api/v1/html/page/9e0b70872781480983620c24445f3a3d?apiKey=4b379adc471942778fda957ff454cd32'
+          // `https://cdn.builder.io/api/v1/html/page?apiKey=${apiKey}&url=${encodedUrl}`
+          
+          // const url = `https://cdn.builder.io/api/v1/html/page?apiKey=${apiKey}&url=${encodedUrl}`;
+          const { data: pageData } = await fetch(url)
+            .then((res) => res.json())
+            .catch(e => {
+              console.log(e)
+            });
+
+          if (pageData) {
+            console.log(pageData)
+            const pageHtml = pageData.html;
+
+            document.body.innerHTML = pageHtml;
+          }
+        }
+
+        getHTML()
+
+    </script>
+    </body>
+</html>
